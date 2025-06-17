@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="svbx.css">
+    <title>BX Responsive Page</title>
+</head>
+<body>
+    <!-- NAVIGATION CENTER -->
+    <nav class="nav-capsule">
+        <div class="logo">SVBX</div>
+        <!-- Cart Icon with Badge -->
+        <div class="nav-cart" style="position: relative; margin-right: 1.2rem;">
+            <svg id="cart-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#fff" viewBox="0 0 24 24" style="vertical-align: middle;">
+                <path d="M7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM7.16 17h9.68c.85 0 1.6-.54 1.87-1.34l3.29-8.82A1 1 0 0 0 21 5H6.21l-.94-2.36A1 1 0 0 0 4.34 2H1v2h2.34l3.6 9.02-1.35 2.44A2 2 0 0 0 5 17c0 1.1.9 2 2 2zm12.24-10-2.88 7.72a.25.25 0 0 1-.24.16H7.16l1.1-2h7.72a1 1 0 0 0 0-2H8.53l-.94-2.36A1 1 0 0 1 8.21 8h10.19z"/>
+            </svg>
+            <span id="cart-badge" class="cart-badge">0</span>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+            <li>
+                <a href="#home" title="Home">
+                    <!-- Home icon SVG (larger and more prominent) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#ffd700" viewBox="0 0 24 24" style="vertical-align: middle; filter: drop-shadow(0 2px 4px rgba(26,35,126,0.13));">
+                        <path d="M12 3l9 9-1.5 1.5L18 12.5V20a1 1 0 0 1-1 1h-4v-5h-2v5H7a1 1 0 0 1-1-1v-7.5l-1.5 1.5L3 12l9-9z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <!-- Call Icon at end -->
+            <li>
+                <a href="tel:0715450867" title="Call SVBX" class="call-link" style="padding-left:0.6rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#25d366" viewBox="0 0 24 24" style="vertical-align: middle;">
+                        <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!----lANDING PAGE -->
+    <section id="home" class="landing-pg">
+        <div class="content-wrapper">
+            <h1>Welcome to BX Surveys</h1>
+            <p class="intro">
+                As professional surveyors, we play a crucial role in shaping the environment. Our services provide accurate measurement data for land boundaries, construction projects, and legal documentation—ensuring regulatory compliance and preventing costly disputes.
+            </p>
+            <p class="tagline">
+                Your trusted partner for professional land surveying services.
+            </p>
+        </div>
+    </section>
+
+    <!-- HEADING FOR OUR SERVICES -->
+    <h2 class="services-heading">Our Services</h2>
+
+    <!--- lAND SURVEY AND DOCUMENTATION SERVICES -->
+    <section id="Services">
+        <!-- Generating 13 Sub-Divs -->
+                <div class="sub-div">
+                    <h2>Land Survey</h2>
+                    <p>Determining precise property boundaries through detailed measurements, ensuring accuracy for legal and construction purposes. Producing comprehensive boundary maps and plans to assist with land ownership, development, and resolution of disputes effectively</p>
+                    <span class="price" id="10000">Ksh. 10,000</span>
+                    <button class="cart-buy-btn">Add to Cart</button>
+                </div>
+                <div class="sub-div">
+                    <h2>Construction Survey</h2>
+                    <P>Setting out precise points and lines for construction projects like buildings, roads, and bridges. Ensures infrastructure aligns with design specifications accurately while providing essential elevation checks and grading plans for efficient construction</P>
+                    <br>
+                    <span class="price" id="20000">Ksh.20,000</span>
+                    <button class="cart-buy-btn">Add to Cart</button>
+                </div>
+                <div class="sub-div">
+                    <h2>Topographic Survey</h2>
+                    <P>Mapping and analyzing natural and man-made features of land, including elevations, contours, vegetation, and structures. Provides valuable data for architects and engineers, aiding in accurate planning and design processes.</P>
+                    <br>
+                    <span class="price" id="15000">Ksh.15,000</span>
+                    <button class="cart-buy-btn">Add to Cart</button>
+                </div>
+    </section>
+
+    <!--- LAND ON SALE -->
+    <section id="services2" class="auction-section">
+        <h2 class="services-heading">Land Auctions</h2>
+        <!-- Search Bar -->
+        <div class="auction-search-bar">
+            <input type="text" id="auction-search-input" placeholder="Search location (e.g. Kitengela, Juja, Ngong...)" aria-label="Search land location" />
+            <button id="auction-search-btn" class="auction-search-btn" aria-label="Search">
+                <svg width="22" height="22" fill="#1a237e" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" stroke="#ffd700" stroke-width="2" fill="none"/>
+                    <line x1="17" y1="17" x2="21" y2="21" stroke="#ffd700" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <div id="auction-no-results" class="auction-no-results" style="display:none;">No results found.</div>
+        <div class="auction-carousel-wrapper">
+        <button class="auction-arrow left" aria-label="Scroll Left">&#8592;</button>
+        <div class="auction-carousel" id="auction-carousel">
+            <!-- Example cards, repeat for cards -->
+            <div class="auction-card" 
+                data-images='["https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80","https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80","https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80"]'
+                data-caption="Kitengela, Kajiado - Prime 1/8 acre plot, ready title, red soil, water & electricity on site.">
+                <div class="auction-img-gallery">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Land in Kitengela" class="auction-img">
+                <button class="gallery-icon" title="View Gallery" tabindex="0" aria-label="Open Gallery">
+                <svg width="28" height="28" fill="#1a237e" viewBox="0 0 24 24"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2zm-2 0H5V5h14zm-7-3l2.03 2.71a1 1 0 0 0 1.54 0L17 14l3 4H4l5-7z"/></svg>
+                </button>
+                </div>
+                <h3 class="auction-title">Kitengela, Kajiado</h3>
+                <span class="auction-price">Ksh. 1,200,000</span>
+                <p class="auction-desc">Prime 1/8 acre plot, ready title, red soil, water & electricity on site.</p>
+                <span class="auction-note">Ideal for residential or investment.</span>
+                <button class="cart-buy-btn">Add to Cart</button>
+            </div>
+            <div class="auction-card">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Land in Juja" class="auction-img">
+                <h3 class="auction-title">Juja, Kiambu</h3>
+                <span class="auction-price">Ksh. 950,000</span>
+                <p class="auction-desc">50x100 plot, close to Thika Road, secure neighborhood, ready for development.</p>
+                <span class="auction-note">Perfect for student hostels or rentals.</span>
+                <button class="cart-buy-btn">Add to Cart</button>
+            </div>
+            <div class="auction-card">
+                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Land in Rongai" class="auction-img">
+                <h3 class="auction-title">Rongai, Nairobi</h3>
+                <span class="auction-price">Ksh. 1,500,000</span>
+                <p class="auction-desc">Serviced plot, near main road, good drainage, ready title deed.</p>
+                <span class="auction-note">Great for family home or holiday cottage.</span>
+                <button class="cart-buy-btn">Add to Cart</button>
+            </div>
+            <div class="auction-card">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Land in Syokimau" class="auction-img">
+                <h3 class="auction-title">Syokimau, Machakos</h3>
+                <span class="auction-price">Ksh. 2,000,000</span>
+                <p class="auction-desc">1/4 acre, close to SGR, water & power available, secure gated community.</p>
+                <span class="auction-note">Suitable for maisonette or apartments.</span>
+                <button class="cart-buy-btn">Add to Cart</button>
+            </div>
+        </div>
+        <button class="auction-arrow right" aria-label="Scroll Right">&#8594;</button>
+    </div>
+    </section>
+
+    <!-- CHECKOUT BUTTON -->
+    <div class="checkout-container">
+        <button id="checkout-btn" class="checkout-btn" title="Total: Ksh. 0">Check Out</button>
+        <div id="checkout-tooltip" class="checkout-tooltip">Total: Ksh. 0</div>
+    </div>
+
+    <!-- M-PESA MODAL -->
+    <div id="mpesa-modal" class="mpesa-modal" aria-modal="true" role="dialog" tabindex="-1" style="display:none;">
+        <div class="mpesa-modal-content">
+            <button class="mpesa-modal-close" id="mpesa-modal-close" aria-label="Close">&times;</button>
+            <h2 class="mpesa-modal-title">M-Pesa Payment</h2>
+            <p class="mpesa-modal-desc">Enter your M-Pesa phone number to proceed with payment:</p>
+            <form id="mpesa-form" autocomplete="off" action="action.php" method="post">
+                <input type="tel" id="mpesa-phone" class="mpesa-input" placeholder="e.g. 07XXXXXXXX" required pattern="^0\d{9}$" aria-label="M-Pesa Phone Number" />
+                <button type="submit" class="mpesa-submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="mpesa-modal-backdrop" class="mpesa-modal-backdrop" style="display:none;"></div>
+
+    <!--- ABOUT US SECTION -->
+    <section id="About">
+        <div class="about-wrapper">
+            <h2 class="about-heading">About BX Survey</h2>
+            <h3 class="about-subheading">Who We Are</h3>
+            <p>
+                BX is a team of licensed, experienced, and passionate land surveyors dedicated to delivering precise, reliable, and innovative surveying solutions. With years of expertise in the industry, we serve property owners, developers, engineers, and legal professionals across the region.
+            </p>
+            <h3 class="about-subheading">What We Do</h3>
+            <p>
+                We provide a comprehensive range of land surveying services, including boundary surveys, construction staking, topographic mapping, title and legal documentation, hydrographic and aerial surveys, and more. Our advanced technology and proven methodologies ensure every project is completed with accuracy and efficiency.
+            </p>
+            <h3 class="about-subheading">Why Choose BX?</h3>
+            <ul class="about-list">
+                <li><strong>Expertise:</strong> Our surveyors are highly trained and certified, bringing deep knowledge to every project.</li>
+                <li><strong>Accuracy:</strong> We use state-of-the-art equipment and rigorous quality control for dependable results.</li>
+                <li><strong>Integrity:</strong> We are committed to transparency, ethical practices, and clear communication.</li>
+                <li><strong>Client Focus:</strong> Your satisfaction and peace of mind are our top priorities. We tailor our services to your unique needs.</li>
+                <li><strong>Timeliness:</strong> We deliver on schedule, helping you avoid costly delays and disputes.</li>
+            </ul>
+            <p class="about-cta">
+                <em>Partner with BX for professional, trustworthy, and efficient land surveying services — your project’s success starts with us.</em>
+            </p>
+        </div>
+    </section>
+
+    <!---CONTACT SECTION -->
+    <section id="Contact">
+    <div class="contact-container">
+        <!-- Left: Google Map -->
+        <div class="contact-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.9999999999995!2d36.821946!3d-1.292066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6e0e0e0e0%3A0x0!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1680000000000!5m2!1sen!2ske"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="SVBX Location"></iframe>
+        </div>
+        <!-- Right: Contact Form -->
+        <div class="contact-form-wrapper">
+            <h2 class="contact-heading">Contact Us</h2>
+            <form id="contactForm" autocomplete="off">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required aria-required="true" placeholder="Name" />
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required aria-required="true" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" required aria-required="true" pattern="^\+?\d{7,15}$" placeholder="+254..." />
+                </div>
+                <div class="form-group">
+                    <input type="date" id="meeting_location" name="meeting_location" placeholder="Preferred meeting location" />
+                </div>
+                <div class="form-group">
+                    <input type="date" id="date" name="date" placeholder="Preferred meeting date" />
+                </div>
+                <div class="form-group">
+                    <input type="time" id="date" name="time" placeholder="Time" />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="location" name="location" placeholder="Location of property" />
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="3" placeholder="What can we do to make you comfortable"></textarea>
+                </div>
+                <button type="submit" class="contact-submit-btn">Send via WhatsApp</button>
+            </form>
+            <!--- SOCIAL LINKS -->
+            <div class="contact-social">
+                <a href="https://wa.me/254700000000" class="social-btn whatsapp" target="_blank" aria-label="WhatsApp"><img src="icons/icons/whatsapp.png" alt="WhatsApp"></a>
+                <a href="mailto:info@svbx.com" class="social-btn gmail" target="_blank" aria-label="Gmail"><img src="icons/icons/gmail.png" alt="Gmail"></a>
+                <a href="https://linkedin.com/company/svbx" class="social-btn linkedin" target="_blank" aria-label="LinkedIn"><img src="icons/icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://instagram.com/svbx" class="social-btn instagram" target="_blank" aria-label="Instagram"><img src="icons/icons/instagram.png" alt="Instagram"></a>
+                <a href="/" class="social-btn logo" aria-label="BX Home"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/homeassistant.svg" alt="BX Logo"></a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- DEVELOPER INFORMATION -->
+    <section id="DeveloperInfo">
+    <div class="developer-card">
+        <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Developer Photo" class="developer-photo" />
+        <div class="developer-info">
+            <h2 class="developer-heading">Developer Info</h2>
+            <p class="developer-name"><strong>Developed by:</strong> Clinton Motari</p>
+            <p class="developer-role">Full Stack Web Developer</p>
+            <p class="developer-contact">
+                <a href="mailto:john.doe@email.com" class="dev-link" aria-label="Email">clintonmotari50@gamil.com</a> &bull;
+                <a href="https://github.com/johndoe" class="dev-link" target="_blank" aria-label="GitHub">GitHub</a> &bull;
+                <a href="https://linkedin.com/in/johndoe" class="dev-link" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+            </p>
+            <p class="developer-note">
+                <em>Passionate about building reliable, user-friendly web solutions for modern businesses.</em>
+            </p>
+        </div>
+    </div>
+    </section>
+
+    <!-- SCRIPT FOR THE HTML DOCUMENT -->
+   <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // =========================
+            // CART FUNCTIONALITY
+            // =========================
+            let total = 0;
+            let cartCount = 0;
+
+            const checkoutBtn = document.getElementById('checkout-btn');
+            const tooltip = document.getElementById('checkout-tooltip');
+            const cartBadge = document.getElementById('cart-badge');
+
+            const priceSpans = document.querySelectorAll('.price');
+            const addButtons = document.querySelectorAll('.sub-div button');
+            const auctionCards = document.querySelectorAll('.auction-card');
+
+            const extractPrice = (text) => parseInt(text.replace(/[^\d]/g, ''), 10) || 0;
+
+            function updateCart(price) {
+                total += price;
+                cartCount += 1;
+                const totalFormatted = `Ksh. ${total.toLocaleString()}`;
+                tooltip.textContent = `Total: ${totalFormatted}`;
+                checkoutBtn.title = `Total: ${totalFormatted}`;
+                if (cartBadge) cartBadge.textContent = cartCount;
+            }
+
+            // Add to cart (services)
+            addButtons.forEach((btn, idx) => {
+                btn.addEventListener('click', function () {
+                    const price = extractPrice(priceSpans[idx].textContent);
+                    updateCart(price);
+                });
+            });
+
+            // Add to cart (auction)
+            auctionCards.forEach(card => {
+                const buyBtn = card.querySelector('.cart-buy-btn');
+                const priceSpan = card.querySelector('.auction-price');
+                if (buyBtn && priceSpan) {
+                    buyBtn.addEventListener('click', () => {
+                        const price = extractPrice(priceSpan.textContent);
+                        updateCart(price);
+                    });
+                }
+            });
+
+            // Tooltip show/hide
+            ['mouseenter', 'focus'].forEach(evt => {
+                checkoutBtn.addEventListener(evt, () => tooltip.style.display = 'block');
+            });
+            ['mouseleave', 'blur'].forEach(evt => {
+                checkoutBtn.addEventListener(evt, () => tooltip.style.display = 'none');
+            });
+
+            // =========================
+            // CONTACT FORM (DB + WHATSAPP)
+            // =========================
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const phone = document.getElementById('phone').value.trim();
+                    const location = document.getElementById('location').value.trim();
+                    const meetingLocation = document.getElementById('meeting_location').value.trim();
+                    const time = document.getElementById('time').value.trim();
+                    const date = document.getElementById('date').value;
+                    const message = document.getElementById('message').value.trim();
+
+                    if (!name || !email || !phone || !location || !meetingLocation || !time || !date) {
+                        alert('Please fill in all required fields.');
+                        return;
+                    }
+                    if (!/^[\w\.-]+@[\w\.-]+\.\w{2,}$/.test(email)) {
+                        alert('Please enter a valid email address.');
+                        return;
+                    }
+                    if (!/^\+?\d{7,15}$/.test(phone)) {
+                        alert('Please enter a valid phone number.');
+                        return;
+                    }
+
+                    // Save to database via PHP backend
+                    fetch('submit.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: new URLSearchParams({
+                            name,
+                            email,
+                            phone,
+                            location,
+                            meeting_location: meetingLocation,
+                            time,
+                            date,
+                            message
+                        })
+                    })
+                    .then(res => res.ok ? res.text() : Promise.reject('Failed to save.'))
+                    .then(() => {
+                        // WhatsApp message
+                        const waNumber = "254700000000";
+                        let waMsg = `Hello BX,%0A%0AMy name is ${name}.%0AEmail: ${email}%0APhone: ${phone}`;
+                        if (date) waMsg += `%0APreferred Date: ${date}`;
+                        if (message) waMsg += `%0AMessage: ${encodeURIComponent(message)}`;
+                        waMsg += `%0A%0ARequest sent from BX website.`;
+                        window.open(``, '_blank');
+                        alert('Your request has been received. We will contact you soon.');
+                        contactForm.reset();
+                    })
+                    .catch(() => alert('There was an error saving your request. Please try again.'));
+                });
+            }
+
+            // =========================
+            // M-PESA MODAL
+            // =========================
+            const mpesaModal = document.getElementById('mpesa-modal');
+            const mpesaBackdrop = document.getElementById('mpesa-modal-backdrop');
+            const mpesaClose = document.getElementById('mpesa-modal-close');
+            const mpesaForm = document.getElementById('mpesa-form');
+            const mpesaInput = document.getElementById('mpesa-phone');
+
+            function openMpesaModal() {
+                mpesaModal.style.display = 'flex';
+                mpesaBackdrop.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+                setTimeout(() => mpesaInput.focus(), 100);
+            }
+
+            function closeMpesaModal() {
+                mpesaModal.style.display = 'none';
+                mpesaBackdrop.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+
+            checkoutBtn.addEventListener('click', e => {
+                e.preventDefault();
+                openMpesaModal();
+            });
+
+            [mpesaClose, mpesaBackdrop].forEach(el => el.addEventListener('click', closeMpesaModal));
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape' && mpesaModal.style.display === 'flex') closeMpesaModal();
+            });
+
+            mpesaForm.addEventListener('submit', e => {
+                e.preventDefault();
+                const phone = mpesaInput.value.trim();
+                if (!/^0\d{9}$/.test(phone)) {
+                    mpesaInput.style.borderColor = "#ea4335";
+                    mpesaInput.focus();
+                    return;
+                }
+                mpesaInput.style.borderColor = "#1a237e";
+                alert("Thank you! Payment instructions will be sent to " + phone);
+                closeMpesaModal();
+            });
+
+            // =========================
+            // AUCTION CAROUSEL
+            // =========================
+            const carousel = document.getElementById('auction-carousel');
+            const leftBtn = document.querySelector('.auction-arrow.left');
+            const rightBtn = document.querySelector('.auction-arrow.right');
+            const cardWidth = 344;
+
+            const scrollCarousel = dir => carousel.scrollBy({ left: dir * cardWidth * 3, behavior: 'smooth' });
+
+            [leftBtn, rightBtn].forEach((btn, i) => {
+                const dir = i === 0 ? -1 : 1;
+                btn.addEventListener('click', () => scrollCarousel(dir));
+                btn.addEventListener('keydown', e => {
+                    if (['Enter', ' '].includes(e.key)) scrollCarousel(dir);
+                });
+            });
+
+            // =========================
+            // GALLERY MODAL
+            // =========================
+            let galleryTimeout = null;
+            let currentGallery = [], currentGalleryIdx = 0;
+
+            const galleryModal = document.getElementById('gallery-modal');
+            const galleryModalImg = document.getElementById('gallery-modal-img');
+            const galleryModalClose = document.getElementById('gallery-modal-close');
+            const galleryModalPrev = document.getElementById('gallery-modal-prev');
+            const galleryModalNext = document.getElementById('gallery-modal-next');
+            const galleryModalCaption = document.getElementById('gallery-modal-caption');
+            const galleryBackdrop = document.querySelector('.gallery-modal-backdrop');
+
+            function openGalleryModal(images, idx, caption) {
+                currentGallery = images;
+                currentGalleryIdx = idx;
+                galleryModalImg.src = images[idx];
+                galleryModalImg.alt = caption || '';
+                galleryModalCaption.textContent = caption || '';
+                galleryModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeGalleryModal() {
+                galleryModal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+
+            function showGalleryImage(idx) {
+                if (!currentGallery.length) return;
+                currentGalleryIdx = (idx + currentGallery.length) % currentGallery.length;
+                galleryModalImg.src = currentGallery[currentGalleryIdx];
+            }
+
+            document.querySelectorAll('.gallery-icon').forEach(icon => {
+                icon.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    const card = icon.closest('.auction-card');
+                    const images = JSON.parse(card.getAttribute('data-images'));
+                    const caption = card.getAttribute('data-caption') || '';
+                    openGalleryModal(images, 0, caption);
+                });
+            });
+
+            document.querySelectorAll('.auction-img').forEach(img => {
+                img.addEventListener('mouseenter', function () {
+                    const card = img.closest('.auction-card');
+                    const images = JSON.parse(card.getAttribute('data-images'));
+                    const caption = card.getAttribute('data-caption') || '';
+                    galleryTimeout = setTimeout(() => openGalleryModal(images, 0, caption), 2000);
+                });
+                img.addEventListener('mouseleave', () => clearTimeout(galleryTimeout));
+            });
+
+            [galleryModalClose, galleryBackdrop].forEach(el => el.addEventListener('click', closeGalleryModal));
+            galleryModalPrev.addEventListener('click', () => showGalleryImage(currentGalleryIdx - 1));
+            galleryModalNext.addEventListener('click', () => showGalleryImage(currentGalleryIdx + 1));
+
+            document.addEventListener('keydown', function (e) {
+                if (galleryModal.style.display === 'flex') {
+                    if (e.key === 'Escape') closeGalleryModal();
+                    if (e.key === 'ArrowLeft') showGalleryImage(currentGalleryIdx - 1);
+                    if (e.key === 'ArrowRight') showGalleryImage(currentGalleryIdx + 1);
+                }
+            });
+
+            // =========================
+            // AUCTION SEARCH
+            // =========================
+            const searchInput = document.getElementById('auction-search-input');
+            const searchBtn = document.getElementById('auction-search-btn');
+            const noResultsMsg = document.getElementById('auction-no-results');
+
+            function filterAuctionCards() {
+                const query = searchInput.value.trim().toLowerCase();
+                let found = 0;
+                auctionCards.forEach(card => {
+                    const title = card.querySelector('.auction-title')?.textContent.toLowerCase() || '';
+                    const match = !query || title.includes(query);
+                    card.style.display = match ? '' : 'none';
+                    if (match) found++;
+                });
+                noResultsMsg.style.display = query && found === 0 ? 'block' : 'none';
+            }
+
+            searchInput.addEventListener('keydown', e => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    filterAuctionCards();
+                }
+            });
+            searchBtn.addEventListener('click', e => {
+                e.preventDefault();
+                filterAuctionCards();
+            });
+        });
+    </script>
+    <!-- MODAL MARKUP -->
+    <div id="gallery-modal" class="gallery-modal" style="display:none;">
+        <div class="gallery-modal-content">
+           <button class="gallery-modal-close" id="gallery-modal-close" aria-label="Close">&times;</button>
+            <button class="gallery-modal-arrow left" id="gallery-modal-prev" aria-label="Previous">&#8592;</button>
+            <img id="gallery-modal-img" src="" alt="Land Gallery" class="gallery-modal-img" />
+            <button class="gallery-modal-arrow right" id="gallery-modal-next" aria-label="Next">&#8594;</button>
+            <div id="gallery-modal-caption" class="gallery-modal-caption"></div>
+        </div>
+        <div class="gallery-modal-backdrop"></div>
+    </div>
+
+</body>
+</html>
